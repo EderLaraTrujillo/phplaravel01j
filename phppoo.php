@@ -99,7 +99,7 @@
             $this -> lastname = $apellido;
             $this -> gender = $genero;
             # para modificar atributos privados :
-            $this -> identificacion = $id;
+            $this -> identificacion = number_format($id);
         }
         # Método para impresión de datos de la clase:
         public function getPersona(){
@@ -109,7 +109,7 @@
     }
     print '<h4>Clases con contructores:</h4>';
     $new_person = new Persona('Eder','Lara Trujillo', 'Masculino','143999943');
-    $new_person = new Persona($_POST['correo'])
+    # $new_person = new Persona($_POST['correo'])
     print $new_person -> getPersona();
+    
 ?>
-<h3></h3>
