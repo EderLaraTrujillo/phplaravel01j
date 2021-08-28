@@ -144,4 +144,15 @@
     print('<br>');
     print $oBB -> masInfo();
 
+    print('<br>');
+
+    # Funciones propias de la clase:
+    function descuentos(){
+        # Calcular el descuento de nomina:
+        $s_social = ((4000000 / 240) * 240) * 0.04 ;
+        return $s_social;
+    }
+
+print descuentos();
+
 ?>
